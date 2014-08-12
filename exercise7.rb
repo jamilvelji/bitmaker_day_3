@@ -11,3 +11,6 @@ student_display(students)
 students[:cohort4] = 43
 
 puts students.keys
+
+students = students.each {|k, v| students[k] = (v * 1.05).to_i}
+puts students
