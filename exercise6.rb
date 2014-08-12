@@ -1,8 +1,14 @@
+def list_display(list_to_sort)
+	list_to_sort.each do |x|
+		puts "* #{x}\n"
+	end
+end
+
 grocery_list = ["water", "soap", "bread", "chicken"]
 
 grocery_list << "rice"
 
-grocery_list_display = grocery_list.each {|x| puts "* #{x}\n"}
+list_display(grocery_list)
 
 puts "Number of items to pick up: #{grocery_list.length}"
 
@@ -13,3 +19,5 @@ else
 end
 
 puts "The 2nd item on the list is: #{grocery_list[1]}"
+
+list_display(grocery_list.sort)
