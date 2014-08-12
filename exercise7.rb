@@ -5,3 +5,5 @@ def student_display(hash_in)
 		puts "#{k}: #{v} students"
 	end
 end
+
+students[:cohort4] = 43
