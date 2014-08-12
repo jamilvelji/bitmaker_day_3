@@ -21,3 +21,7 @@ end
 puts "The 2nd item on the list is: #{grocery_list[1]}"
 
 list_display(grocery_list.sort)
+
+grocery_list.delete("rice")
+puts "Rice has been deleted from the list"
+list_display(grocery_list.sort)
