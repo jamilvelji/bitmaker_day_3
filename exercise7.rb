@@ -17,3 +17,7 @@ puts students
 
 students.delete(:cohort2)
 puts students
+
+total_students = 0
+students.each {|k, v| total_students += v}
+puts "The total number of students is: #{total_students}"
