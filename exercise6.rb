@@ -11,3 +11,5 @@ if grocery_list.include?("bananas")
 else
 	puts "You don't need to pick up bananas today"
 end
+
+puts "The 2nd item on the list is: #{grocery_list[1]}"
